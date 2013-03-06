@@ -30,8 +30,7 @@
 #import "OAuthCustomHostCreator.h"
 
 // keys for login
-#define OAuthClientID               @"Your OAuth Key"
-#define OAuthConsumerSecret         @"Your OAuth secret"
+#import "OAuthKeys.h" // this file to be supplied by Jenkins at build time
 
 @interface OAuthViewController : UIViewController <UIWebViewDelegate, UIPopoverControllerDelegate, 
             OAuthLoginHostPickerDelegate, UINavigationControllerDelegate, OAuthCustomHostCreatorDelegate> {
